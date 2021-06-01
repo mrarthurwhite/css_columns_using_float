@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+
+.main-content {  
+    margin:auto;   
+    width: 55%;         /* We need to set the width whenever we float an element */
+    border: 5px solid lightskyblue; 
+  }                   
+                      
+  .aside-left {        
+    float: left;        /* This causes the sidebar to move to the left
+                           It's going to appear to the left of the content because 
+                           we declared it first in our HTML page */
+    width: 15%;         /* We need to set the width whenever we float an element */
+    border: 5px solid lightskyblue; 
+  }                   
+                      
+  .aside-right {        
+    float: right;       /* This causes the sidebar to move to the right */
+    width: 15%;         /* We need to set the width whenever we float an element */
+    border: 5px solid lightskyblue; 
+  }
+
+</style>
+</head>
+<body>
+    <div class="container">
+
+        <aside class="aside-left">
+            Side panel 1
+		</aside>
+
+        <aside class="aside-right">
+            Side panel 2   
+		</aside>
+
+        <article class="main-content">
+            Main Panel
+        </article>
+
+    </div>
+        
+</body>
+</html>
